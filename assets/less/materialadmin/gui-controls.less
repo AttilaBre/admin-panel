@@ -6,7 +6,7 @@
 // General GUI elements
 // -------------------------
 
-.gui-controls { 
+.gui-controls {
 	font-size: @menubar-font-size;
 	padding: 0;
 	margin-bottom: 30px;
@@ -25,7 +25,7 @@
 		}
 	}
 	// First GUI header has no top margin
-	li { 
+	li {
 		&:first-child > small {
 			margin-top: 0;
 		}
@@ -46,9 +46,9 @@
 // GUI items
 // -------------------------
 
-.gui-controls { 
+.gui-controls {
 	// General GUI item markup
-	li { 
+	li {
 		list-style: none;
 
 		// GUI item titles
@@ -108,14 +108,14 @@
 
 // Markup for a first level item when it is selected and the menu is opened
 .expanded-menu-item-markup {
-	.gui-controls { 
+	.gui-controls {
 		> li {
-			// First level menu item hover style 
+			// First level menu item hover style
 			&:not(.gui-folder) > a:hover {
 				background-color: @menubar-link-hover;
 			}
 
-			// First level menu item active style 
+			// First level menu item active style
 			&.active:not(.gui-folder) > a {
 				background-color: @menubar-link-active;
 				.transition(background 0.3s linear);
@@ -132,7 +132,7 @@
 // -------------------------
 
 .gui-controls {
-	li { 
+	li {
 		// General tree markup
 		ul {
 			padding: 0;
@@ -181,7 +181,7 @@
 // -------------------------
 
 .gui-controls {
-	> li { 
+	> li {
 		ul {
 			> li {
 				position: relative;
@@ -209,7 +209,7 @@
 					position: absolute;
 					display: block;
 					width: @menubar-tree-width;
-					border-bottom: 1px dashed @menubar-tree-border-color; 
+					border-bottom: 1px dashed @menubar-tree-border-color;
 					z-index: 1;
 				}
 			}
@@ -221,8 +221,8 @@
 // Titles
 // -------------------------
 
-.gui-controls { 
-	li { 
+.gui-controls {
+	li {
 		// General title markup
 		.title {
 			position: relative;
@@ -237,18 +237,18 @@
 			.transition(all @menubar-collapse-speed @menubar-collapse-ease);
 		}
 		> a:hover {
-			.title { 
-				color: @menubar-link-hover-color; 
+			.title {
+				color: @menubar-link-hover-color;
 			}
 		}
 		&.active > a {
-			.title { 
-				color: @menubar-link-active-color; 
+			.title {
+				color: @menubar-link-active-color;
 				font-weight: @weight-medium;
 			}
 		}
 
-		// Folder title markup 
+		// Folder title markup
 		&.gui-folder > a {
 			.title {
 				font-style: italic;
@@ -271,8 +271,8 @@
 }
 
 // Markup for the title when the menu is visible
-.expanded-menu-title { 
-	.gui-controls { 
+.expanded-menu-title {
+	.gui-controls {
 		// Show menu titles
 		li {
 			.title {
@@ -318,7 +318,7 @@
 }
 
 // Main level collapse/Expand signs
-.gui-controls { 
+.gui-controls {
 	> .gui-folder {
 		> a:after {
 			top: 12px;
@@ -382,7 +382,7 @@
 	}
 }
 
-.gui-controls { 
+.gui-controls {
 	a.expanded .gui-icon,
 	li.active .gui-icon,
 	li.active .gui-icon:hover {
@@ -423,9 +423,9 @@
 // --------------------------------------------------
 
 .gui-controls {
-	a.blink .gui-icon {
-		.animation(normal 1.4s 4 blink cubic-bezier(.9,0,0.1,1));
-	}
+	// a.blink .gui-icon {
+	// 	.animation(normal 1.4s 4 blink cubic-bezier(.9,0,0.1,1));
+	// }
 }
 
 @-moz-keyframes blink {
@@ -447,7 +447,7 @@
 // Medium Devices
 // -------------------------
 
-@media (min-width: @screen-lg-min) { 
+@media (min-width: @screen-lg-min) {
 	.menubar-pin {
 		.expanded-menu-item-markup();
 		.expanded-menu-title();
