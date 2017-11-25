@@ -31,16 +31,22 @@
             color: white;
         }
     }
+    
+    .activated a .title {
+        color: white;
+    }
+
     .homeIco > a > .gui-icon {
         background: url(../img/menu-icons/home.png) no-repeat;
         background-size: auto;
         background-position: center;
     }
-    .homeIco:hover .gui-icon {
+    .homeIco:hover .gui-icon, .homeIco.activated .gui-icon{
         background: url(../img/menu-icons/hover/home.png) no-repeat;
         background-size: auto;
         background-position: center;
     }
+
 
     .traningIco > a > .gui-icon {
         background: url(../img/menu-icons/treining.png) no-repeat;
