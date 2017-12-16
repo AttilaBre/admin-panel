@@ -1,0 +1,105 @@
+body {
+  background-color: @darkBlue;
+  line-height: 1;
+}
+
+.list-of-nutrients {
+  padding: 85px 85px 0 75px;
+
+  @media screen and (max-width: 992px) {
+    padding: 65px 65px 0 55px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 45px 45px 0 35px;
+  }
+
+  .title {
+    color: white;
+    font-size: @extraLarge;
+    margin-bottom: 90px;
+
+    @media screen and (max-width: 992px) {
+      font-size: @large;
+      margin-bottom: 70px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: @medium;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    &--sub {
+      font-size: @medium;
+      margin-bottom: 50px;
+
+      @media screen and (max-width: 992px) {
+        font-size: @small;
+      }
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+    } /* END OF TITLE TITLE--SUB*/
+
+  } /* END OF TITLE */
+
+  .caption {
+    font-size: @extraSmall;
+    font-weight: 600;
+    margin-bottom: 25px;
+
+    &--element {
+      font-size: @extraSmall;
+      font-weight: 200;
+      margin-left: 30px;
+      display: none;
+
+      @media screen and (max-width: 768px) {
+        font-size: @tiny;
+      }
+    } /* END OF CAPTION CAPTION--ELEMENT*/
+
+    &--normal {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 200;
+      margin-top: 60px;
+      margin-bottom: 95px;
+
+      @media screen and (max-width: 992px) {
+        margin-top: 50px;
+        margin-bottom: 55px;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 45px;
+      }
+    } /* END OF CAPTION CAPTION--NORMAL*/
+
+  } /* END OF CAPTION*/
+
+  .nutrient {
+    width: 25%;
+    cursor: pointer;
+
+    @media screen and (max-width: 992px) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    .list-opener {
+      width: 10px;
+      font-style: normal;
+      display: inline-block;
+    }
+  } /* END OF NUTRIENT*/
+
+} /* END OF LIST-OF-NUTRIENTS*/
