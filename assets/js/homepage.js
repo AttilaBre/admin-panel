@@ -29,6 +29,7 @@ $(document).ready(function() {
     $(this).siblings().removeClass('hide'); // show corresponding feat
   });
 
+ // Header language switch
   $('#languageSwitch').click(function() {
       $('.otherLanguage').toggleClass('block');
   });
